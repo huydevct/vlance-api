@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "deadline": {
+      "type": "date"
+    },
+    "place": {
+      "type": "string"
+    },
+    "budgetMin": {
+      "type": "integer"
+    },
+    "budgetMax": {
+      "type": "integer"
+    },
+    "workType": {
+      "type": "string"
+    },
+    "payType": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "requested",
+        "pending",
+        "viewed"
+      ]
+    },
+    "post": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::post.post",
+      "mappedBy": "project"
+    }
+  }
+}

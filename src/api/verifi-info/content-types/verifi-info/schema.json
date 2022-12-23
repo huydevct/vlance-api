@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "verifi_infos",
+  "info": {
+    "singularName": "verifi-info",
+    "pluralName": "verifi-infos",
+    "displayName": "verifi_info"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "phoneNumber": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "identification": {
+      "type": "json"
+    }
+  }
+}
