@@ -6,8 +6,8 @@ module.exports = ({ env }) => ({
         apiKey: env("SENDGRID_API_KEY"),
       },
       settings: {
-        defaultFrom: "noreply@vlance.com",
-        defaultReplyTo: "noreply@vlance.com",
+        defaultFrom: env("EMAIL_DEFAULT_FROM"),
+        defaultReplyTo: env("EMAIL_DEFAULT_REPLY_TO"),
       },
     },
   },
