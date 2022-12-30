@@ -1,5 +1,5 @@
 {
-  "/contents": {
+  "/messages": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ContentListResponse"
+                "$ref": "#/components/schemas/MessageListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Content"
+        "Message"
       ],
       "parameters": [
         {
@@ -169,7 +169,7 @@
           }
         }
       ],
-      "operationId": "get/contents"
+      "operationId": "get/messages"
     },
     "post": {
       "responses": {
@@ -178,7 +178,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ContentResponse"
+                "$ref": "#/components/schemas/MessageResponse"
               }
             }
           }
@@ -235,23 +235,23 @@
         }
       },
       "tags": [
-        "Content"
+        "Message"
       ],
       "parameters": [],
-      "operationId": "post/contents",
+      "operationId": "post/messages",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/ContentRequest"
+              "$ref": "#/components/schemas/MessageRequest"
             }
           }
         }
       }
     }
   },
-  "/contents/{id}": {
+  "/messages/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -259,7 +259,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ContentResponse"
+                "$ref": "#/components/schemas/MessageResponse"
               }
             }
           }
@@ -316,7 +316,7 @@
         }
       },
       "tags": [
-        "Content"
+        "Message"
       ],
       "parameters": [
         {
@@ -330,7 +330,7 @@
           }
         }
       ],
-      "operationId": "get/contents/{id}"
+      "operationId": "get/messages/{id}"
     },
     "put": {
       "responses": {
@@ -339,7 +339,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ContentResponse"
+                "$ref": "#/components/schemas/MessageResponse"
               }
             }
           }
@@ -396,7 +396,7 @@
         }
       },
       "tags": [
-        "Content"
+        "Message"
       ],
       "parameters": [
         {
@@ -410,13 +410,13 @@
           }
         }
       ],
-      "operationId": "put/contents/{id}",
+      "operationId": "put/messages/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/ContentRequest"
+              "$ref": "#/components/schemas/MessageRequest"
             }
           }
         }
@@ -487,7 +487,7 @@
         }
       },
       "tags": [
-        "Content"
+        "Message"
       ],
       "parameters": [
         {
@@ -501,7 +501,7 @@
           }
         }
       ],
-      "operationId": "delete/contents/{id}"
+      "operationId": "delete/messages/{id}"
     }
   }
 }

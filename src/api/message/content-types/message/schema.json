@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "contents",
+  "collectionName": "messages",
   "info": {
-    "singularName": "content",
-    "pluralName": "contents",
-    "displayName": "message",
-    "description": ""
+    "singularName": "message",
+    "pluralName": "messages",
+    "displayName": "Message"
   },
   "options": {
     "draftAndPublish": true
@@ -15,10 +14,10 @@
     "message": {
       "type": "richtext"
     },
-    "user_id_create": {
+    "user_id": {
       "type": "biginteger"
     },
-    "user_id": {
+    "user_id_create": {
       "type": "biginteger"
     },
     "room_id": {

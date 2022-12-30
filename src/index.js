@@ -50,7 +50,9 @@ module.exports = {
         let strapiData = {
           // Generating the message data to be stored in Strapi
           data: {
-            user: data.user,
+            user_id: data.user_id,
+            user_id_create: data.user_id_create,
+            room_id: socket.id,
             message: data.message,
           },
         };
