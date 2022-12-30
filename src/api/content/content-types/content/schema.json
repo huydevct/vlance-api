@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents",
+  "info": {
+    "singularName": "content",
+    "pluralName": "contents",
+    "displayName": "message",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "message": {
+      "type": "richtext"
+    },
+    "user_id_create": {
+      "type": "biginteger"
+    },
+    "user_id": {
+      "type": "biginteger"
+    },
+    "room_id": {
+      "type": "biginteger"
+    }
+  }
+}
