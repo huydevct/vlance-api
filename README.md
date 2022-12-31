@@ -54,4 +54,17 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 
 ---
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+# Guide to run BE fluently on local
+
+- Clone the project of BE from this [Github](https://github.com/huydevct/vlance-api)
+- Use this command to run project BE on localhost:
+
+```
+    npx strapi develop => on development
+    npx strapi build => to build on development
+```
+
+- Before running it, rename ths folder migrations => migrations_1
+- Then run command: `npx strapi develop`, after it's success, push ctrl+C to cancel the terminal
+- Then rename the folder migrations_1 => migrations
+- Then run this command `npx strapi develop` to run it completely
