@@ -15,9 +15,6 @@
     "title": {
       "type": "text"
     },
-    "description": {
-      "type": "text"
-    },
     "deadline": {
       "type": "date"
     },
@@ -34,12 +31,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category",
-      "inversedBy": "post"
-    },
-    "sub_category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::sub-category.sub-category",
       "inversedBy": "post"
     },
     "service": {
@@ -77,6 +68,9 @@
       "relation": "oneToOne",
       "target": "api::recommend.recommend",
       "inversedBy": "post"
+    },
+    "description": {
+      "type": "json"
     }
   }
 }

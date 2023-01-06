@@ -15,9 +15,6 @@
     "workField": {
       "type": "string"
     },
-    "description": {
-      "type": "string"
-    },
     "title": {
       "type": "string"
     },
@@ -47,6 +44,9 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "profile"
+    },
+    "description": {
+      "type": "json"
     }
   }
 }

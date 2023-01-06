@@ -4,7 +4,8 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Category"
+    "displayName": "Category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,17 +15,23 @@
     "name": {
       "type": "string"
     },
-    "sub_category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::sub-category.sub-category",
-      "inversedBy": "category"
-    },
     "post": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::post.post",
       "mappedBy": "category"
+    },
+    "parent_ids": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category",
+      "inversedBy": "category"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category",
+      "inversedBy": "parent_ids"
     }
   }
 }
