@@ -30,7 +30,7 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::post.post",
-      "inversedBy": "recommend"
+      "mappedBy": "recommend"
     }
   }
 }

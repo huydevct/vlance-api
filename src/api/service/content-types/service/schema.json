@@ -15,12 +15,6 @@
     "name": {
       "type": "string"
     },
-    "sub_category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::sub-category.sub-category",
-      "inversedBy": "service"
-    },
     "post": {
       "type": "relation",
       "relation": "oneToOne",

@@ -6,7 +6,7 @@ module.exports = ({ env }) => ({
       port: env.int("DATABASE_PORT", 3306),
       database: env("DATABASE_NAME", "vlance-api"),
       user: env("DATABASE_USERNAME", "root"),
-      password: env("DATABASE_PASSWORD", "0913543156"),
+      password: env("DATABASE_PASSWORD", "Benzen@123"),
       ssl: env.bool("DATABASE_SSL", false),
     },
   },
