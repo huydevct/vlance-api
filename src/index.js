@@ -18,7 +18,7 @@ module.exports = {
    */
   bootstrap(/*{ strapi }*/) {
     //strapi.server.httpServer is the new update for Strapi V4
-    var io = require("socket.io")(strapi.server.httpServer, {
+    const io = require("socket.io")(strapi.server.httpServer, {
       cors: {
         // cors setup
         origin: "http://localhost:3000",
@@ -56,7 +56,7 @@ module.exports = {
             message: data.message,
           },
         };
-        var axios = require("axios");
+        const axios = require("axios");
         await axios
           .post("http://localhost:1337/api/messages", strapiData) //Storing the messages in Strapi
           .then((e) => {
