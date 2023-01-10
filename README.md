@@ -68,3 +68,9 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 - Then run command: `npx strapi develop`, after it's success, push ctrl+C to cancel the terminal
 - Then rename the folder migrations_1 => migrations
 - Then run this command `npx strapi develop` to run it completely
+- You need to set the permission of roles that you can call api and use the documentation of api:
+
+```
+    - Settings > Roles below Users&Permissions plugin > Click to Authenticated > Click to each collections and tick select all to allow user after login can use these api which need
+    - Do like above with Client, Freelancer and Public
+```
