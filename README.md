@@ -57,6 +57,8 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 # Guide to run BE fluently on local
 
 - Clone the project of BE from this [Github](https://github.com/huydevct/vlance-api)
+- Need to install MySQL on you desktop then you need to create a database name `vlance-api`
+- Then run `npm install` to install all package you need
 - Use this command to run project BE on localhost:
 
 ```
