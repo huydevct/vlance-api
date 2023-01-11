@@ -62,10 +62,30 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 - Use this command to run project BE on localhost:
 
 ```
-    npx strapi develop => on development
+    npx strapi develop => on development (use much time)
     npx strapi build => to build on development
 ```
 
+- Create file .env with value
+
+```
+    DATABASE_HOST=127.0.0.1
+    DATABASE_PORT=3306
+    DATABASE_NAME=vlance-api
+    DATABASE_USERNAME=root
+    DATABASE_PASSWORD=Test@123456
+    DATABASE_SSL=false
+
+    HOST=0.0.0.0
+    PORT=1337
+    APP_KEYS=H10RtdFqZtRQ5H/uORwF5g==,RJ7maTq4YNohRVqL1Gstyw==,Hi8OYaQglhuTYGtWgow2Dw==,qKVJK70lO78mEI0pxM/pIw==
+    API_TOKEN_SALT=TcUjUDemePTomv1uB48M2A==
+    ADMIN_JWT_SECRET=FksVII3CGEwQtXxqWV85TA==
+    JWT_SECRET=UrqiZqzKToPaie1m+2/WBA==
+    SENDGRID_API_KEY=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
+```
+
+- Change the password of database with you local database password
 - Before running it, rename ths folder migrations => migrations_1
 - Then run command: `npx strapi develop`, after it's success, push ctrl+C to cancel the terminal
 - Then rename the folder migrations_1 => migrations
