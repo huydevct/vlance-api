@@ -28,9 +28,9 @@
     },
     "post": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::post.post",
-      "mappedBy": "recommend"
+      "inversedBy": "recommends"
     }
   }
 }

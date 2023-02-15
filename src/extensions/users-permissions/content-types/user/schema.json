@@ -98,35 +98,35 @@
         "audios"
       ]
     },
-    "post": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::post.post",
-      "mappedBy": "users_permissions_user"
-    },
-    "skill": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::skill.skill",
-      "inversedBy": "user"
-    },
-    "profile": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::profile.profile",
-      "mappedBy": "users_permissions_user"
-    },
     "tests": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::test.test",
       "mappedBy": "user"
     },
+    "skills": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::skill.skill",
+      "mappedBy": "users"
+    },
+    "profile": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "users_permissions_users"
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post",
+      "mappedBy": "users_permissions_user"
+    },
     "answer": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::answer.answer",
-      "inversedBy": "users_permissions_user"
+      "inversedBy": "users_permissions_users"
     }
   }
 }

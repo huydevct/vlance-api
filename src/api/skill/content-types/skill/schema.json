@@ -4,7 +4,8 @@
   "info": {
     "singularName": "skill",
     "pluralName": "skills",
-    "displayName": "Skill"
+    "displayName": "Skill",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,17 +15,17 @@
     "name": {
       "type": "string"
     },
-    "post": {
+    "users": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::post.post",
-      "mappedBy": "skill"
-    },
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
-      "mappedBy": "skill"
+      "inversedBy": "skills"
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::post.post",
+      "inversedBy": "skills"
     }
   }
 }

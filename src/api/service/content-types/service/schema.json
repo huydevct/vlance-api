@@ -15,11 +15,11 @@
     "name": {
       "type": "string"
     },
-    "post": {
+    "posts": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToMany",
       "target": "api::post.post",
-      "mappedBy": "service"
+      "mappedBy": "services"
     }
   }
 }

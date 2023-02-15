@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "Project"
+    "displayName": "Project",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,12 +24,6 @@
     "budgetMax": {
       "type": "integer"
     },
-    "workType": {
-      "type": "string"
-    },
-    "payType": {
-      "type": "string"
-    },
     "status": {
       "type": "enumeration",
       "enum": [
@@ -43,6 +38,21 @@
       "relation": "oneToOne",
       "target": "api::post.post",
       "mappedBy": "project"
+    },
+    "workType": {
+      "type": "enumeration",
+      "enum": [
+        "Bán thời gian",
+        "Toàn thời gian"
+      ]
+    },
+    "payType": {
+      "type": "enumeration",
+      "enum": [
+        "Trả theo dự dán",
+        "Trả theo giờ",
+        "Trả theo tháng"
+      ]
     }
   }
 }

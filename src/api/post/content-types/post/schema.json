@@ -33,12 +33,6 @@
       "target": "api::category.category",
       "inversedBy": "post"
     },
-    "service": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::service.service",
-      "inversedBy": "post"
-    },
     "project": {
       "type": "relation",
       "relation": "oneToOne",
@@ -53,24 +47,30 @@
     },
     "users_permissions_user": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "post"
+      "inversedBy": "posts"
     },
-    "skill": {
+    "skills": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToMany",
       "target": "api::skill.skill",
-      "inversedBy": "post"
-    },
-    "recommend": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::recommend.recommend",
-      "inversedBy": "post"
+      "inversedBy": "posts"
     },
     "description": {
       "type": "json"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::service.service",
+      "inversedBy": "posts"
+    },
+    "recommends": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recommend.recommend",
+      "mappedBy": "post"
     }
   }
 }
