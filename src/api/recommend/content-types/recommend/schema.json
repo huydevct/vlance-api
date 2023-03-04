@@ -31,6 +31,16 @@
       "relation": "manyToOne",
       "target": "api::post.post",
       "inversedBy": "recommends"
+    },
+    "files": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
