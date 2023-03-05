@@ -71,6 +71,16 @@
       "relation": "oneToMany",
       "target": "api::recommend.recommend",
       "mappedBy": "post"
+    },
+    "files": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
