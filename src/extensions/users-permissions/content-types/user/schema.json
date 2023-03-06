@@ -132,6 +132,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::address.address"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
     }
   }
 }
