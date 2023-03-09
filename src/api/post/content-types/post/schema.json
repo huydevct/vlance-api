@@ -73,14 +73,18 @@
       "mappedBy": "post"
     },
     "files": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "idRecommendRecieved": {
+      "type": "biginteger"
     }
   }
 }
