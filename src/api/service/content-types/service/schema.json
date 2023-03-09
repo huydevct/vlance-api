@@ -20,6 +20,12 @@
       "relation": "manyToMany",
       "target": "api::post.post",
       "mappedBy": "services"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "services"
     }
   }
 }
