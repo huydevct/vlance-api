@@ -47,6 +47,11 @@
     },
     "description": {
       "type": "json"
+    },
+    "pro_file_images": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pro-file-image.pro-file-image"
     }
   }
 }

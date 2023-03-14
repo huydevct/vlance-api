@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pro_file_images",
+  "info": {
+    "singularName": "pro-file-image",
+    "pluralName": "pro-file-images",
+    "displayName": "ProFileImage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "file": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
