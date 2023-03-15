@@ -52,6 +52,16 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::pro-file-image.pro-file-image"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
     }
   }
 }
