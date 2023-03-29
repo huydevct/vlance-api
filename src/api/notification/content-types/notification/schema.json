@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notifications",
+  "info": {
+    "singularName": "notification",
+    "pluralName": "notifications",
+    "displayName": "Notification"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userId": {
+      "type": "biginteger"
+    },
+    "targetType": {
+      "type": "string"
+    },
+    "targetId": {
+      "type": "biginteger"
+    },
+    "metadata": {
+      "type": "json"
+    }
+  }
+}
